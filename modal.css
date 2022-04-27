@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.modal {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  display: none;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  color: white;
+}
+
+.modal__backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+  padding: 90px 50px 60px 530px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../imag/imgLogin.jpg");
+  background-repeat: no-repeat;
+  margin: 10% auto;
+  width: 100%;
+  max-width: 954px;
+  max-height: 608px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  width: 22px;
+  top: 15px;
+  right: 15px;
+}
+
+.modal__close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+@media (max-width: 989px) {
+  .modal {
+    padding: 0;
+  }
+  .modal__content {
+    padding: 90px 5% 60px 5%;
+    margin: 23% 0%;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=modal.css.map */
