@@ -1,8 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 * {
   padding: 0;
   margin: 0;
-  outline: none;
+  outline: none;  
 }
+
+.background{
+  width:100%;
+  height: 100%;
+  background-image: url("./img/imgLogin.jpg");
+  background-size:auto;
+  background-repeat:no-repeat;
+}
+
+.LogoBunyDiv{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LogoBuny{
+  height: 80%;
+}
+
+
+.body{
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+.bigText{
+  font-family: Dela Gothic One;
+  font-size:50px;
+  color:rgba(74, 124, 89);
+  margin-bottom: 25px;
+}
+
+.input{
+  width: 40%;
+  height: 40px;
+  font-size:16px;
+  font-weight: 700;
+  padding: 5px 5px;
+  font-family: Lato;
+  border-radius: 5px;
+  color:rgba(74, 124, 89);
+  border-color: rgba(74, 124, 89);
+  margin: 30px 5px;
+}
+
+.descriptionText{
+  font-family: Lato;
+  font-size: 18px;
+  font-weight:600;
+  color: rgba(40,40,40);
+}
+
+.strong{
+  font-weight: bolder;
+  color: rgba(74, 124, 89);;
+}
+
+.button{
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(74, 124, 89);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+
 
 .modal {
   position: fixed;
@@ -69,5 +150,30 @@
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+
+  .bigText{
+    font-size:45px;
+  }
+}
+
+@media (max-width: 989px) {
+
+  .body{
+    margin-top: 10px;
+  }
+  .bigText{
+    font-size:30px;
+    margin-bottom: 15px;
+  }
+  .input{
+    width: 90%;
+  }
+  .descriptionText{
+    font-size:16px;
+    font-weight: 900;
+  }
+  
+
 }
 /*# sourceMappingURL=modal.css.map */
+
