@@ -21,19 +21,25 @@ button.addEventListener('click', ()=>{
     var hora = hoy.getHours() + ':' + hoy.getMinutes() + ':' + hoy.getSeconds();
 
     const email = input.value
-    db.collection("users").add({
-        correo: email,
-        date: fecha,
-        hour: hora
-    }).then((docRef) => {
-        console.log("Document written with ID: ", docRef.id);
-        input.value = ''
 
-        authModal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        setTimeout(handleModalAppear, 1);
+    if(email === ""){
+        alert("Ingrese un correo valido")
+    } else{
+        db.collection("users").add({
+            correo: email,
+            date: fecha,
+            hour: hora
+        }).then((docRef) => {
+            console.log("Document written with ID: ", docRef.id);
+            alert("Gracias por registrarse espera un correo nuestro muy pronto.")
+
+            input.value = ''
         
-    })
+        })
+
+
+    }
+    
 
 })
 
